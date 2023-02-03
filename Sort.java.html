@@ -1,0 +1,30 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Sort {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("====================================================");
+        System.out.print("Bir Dizi Sayısı Giriniz : ");
+        int arrayNumber = input.nextInt();
+        System.out.println("====================================================");
+
+        int[] list = new int[arrayNumber];
+
+        for (int i=0; i< list.length; i++){
+
+            System.out.print(i+1+". Sayıyı Giriniz : ");
+            list[i] = input.nextInt();
+        }
+
+        Arrays.sort(list);
+        System.out.println("=====================================================");
+        System.out.println("Dizi Listesi => "+Arrays.toString(list));
+        System.out.println("=====================================================");
+
+    }
+
+}
